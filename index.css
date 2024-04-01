@@ -1,24 +1,32 @@
-/* Feel free to edit CSS of body if you'd like. We provide you the light gray background color and font family in the body styling */
 body {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   margin: 0;
   background-color:rgb(220, 131, 131);
 }
 
-/* TODO: Create CSS for your Twitter Mockup */
-
+/*When the screen is smaller (like on phone) hide side*/
 @media screen and (max-width: 1200px) {
-  .wtf_hide, #wtf, .wtf_people { display: none; }  
+  .side_hide, #side, .side_people { display: none; }  
 }
 
+/*When the screen is larger show side*/
 @media screen and (min-width: 1201px) {
-  #wtf {
+  #side_right, #side_left {
     margin: 5px;
     background-color:white;
     padding: 10px;
+    width: 250px;
   }
 
-  .wtf_people {
+  #side_right {
+    margin-left: 20px;
+  }
+
+  #side_left {
+    margin-right: 20px;
+  }
+
+  .side_people {
     border-bottom: 2px solid #e6ecf0;
     padding-bottom: 15px;
     min-height: 51px;
@@ -39,12 +47,24 @@ body {
 }
 
 .nav_name:hover {
-  color: #1da1f2;
+  color: #aa0404;
   font-weight: bold;
-  border-bottom: 2px solid #1da1f2;
+  border-bottom: 2px solid #aa0404;
 }
 
-#tweet_button{
+#main_body {
+  margin: 10px;
+  width: 1100px;
+  background-color: beige; /*Color used to editing*/
+}
+
+#side_content {
+  margin: 5px;
+  background-color:white;
+  padding: 10px;
+}
+
+#button{ /*This is old, but can be used for futur buttona*/
   border-color: #1da1f2;
   color: white;
   background-color: #1da1f2;
@@ -85,7 +105,7 @@ body {
   font-weight: bold;
 }
 
-#post_area, #user_box_area{
+#post_area{
   margin: 5px;
   background-color:white;
 }
@@ -118,7 +138,7 @@ body {
 }
 
 
-#wtf_title {
+#side_title {
   font-weight: bold;
   font-size: 1.3em;
 }
