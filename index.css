@@ -1,3 +1,13 @@
+/*Complamentary Colors (found using Adobe Color Wheel:
+1) #DC8383 (the red used in the body of the website
+2) #BAD6CC (Light blue)
+3) #BCD6BA (light green) 
+4) #5C4040 (burgandy)
+5) #405C51 (dark green)
+6) #851322 (dakr red)
+7) #EFA960 (orangeish)
+*/
+
 body {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   margin: 0;
@@ -6,7 +16,7 @@ body {
 
 /*When the screen is smaller (like on phone) hide side*/
 @media screen and (max-width: 1200px) {
-  .side_hide, #side, .side_people { display: none; }  
+  .side_hide, .side_people { display: none; }  
 }
 
 /*When the screen is larger show side*/
@@ -33,6 +43,34 @@ body {
   }
 }
 
+h1 {
+  text-align: center;
+  font-size: xxx-large;
+}
+
+h2 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: x-large;
+}
+
+button {
+  border-radius: 20px;
+  border-width: 4px;
+  border-style: solid;
+  border-color: #BCD6BA; 
+  color: #5C4040;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #EFA960;
+}
+
 #nav {
   height: 40px;
   background-color: white;
@@ -54,8 +92,16 @@ body {
 
 #main_body {
   margin: 10px;
+  /*padding: 10px;*/
   width: 1100px;
-  background-color: beige; /*Color used to editing*/
+}
+
+.main_body_section {
+  padding: 10px;
+  border-width: 25px;
+  border-radius: 25px;
+  background-color: #548B63; /*Color used to editing*/
+  margin-bottom: 10px;
 }
 
 #side_content {
@@ -74,6 +120,10 @@ body {
   margin-top: 6px;
   margin-right: 10px;
   text-align: end;
+}
+
+.highlight {
+  color: #BAD6CC;
 }
 
 #user_img {
