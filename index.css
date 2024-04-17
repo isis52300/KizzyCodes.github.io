@@ -1,13 +1,3 @@
-/*Complamentary Colors (found using Adobe Color Wheel:
-1) #DC8383 (the red used in the body of the website
-2) #BAD6CC (Light blue)
-3) #BCD6BA (light green) 
-4) #5C4040 (burgandy)
-5) #405C51 (dark green)
-6) #851322 (dakr red)
-7) #EFA960 (orangeish)
-*/
-
 body {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   margin: 0;
@@ -110,95 +100,33 @@ button:hover {
   padding: 10px;
 }
 
-#button{ /*This is old, but can be used for futur buttona*/
-  border-color: #1da1f2;
-  color: white;
-  background-color: #1da1f2;
-  border-radius: 35px;
-  padding: 0px 15px;
+/*Base of popup*/
+.popup {
+  position: absolute;
+  display: inline-block;
+  cursor: pointer;
+  visibility: hidden;
+  border-radius: 5px;
+  padding: 1px;
+  z-index: 1;
+
+  background-color: #BCD6BA;
+  color: #5C4040;
   text-align: center;
-  margin-top: 6px;
-  margin-right: 10px;
-  text-align: end;
+  font-size: medium;
+  max-width: 200px;
+}
+
+.show {
+  visibility: visible;
+}
+
+#relevant_coursework::after {
+  top: 100%;
+  left: 65%;
 }
 
 .highlight {
   color: #BAD6CC;
 }
 
-#user_img {
-  border-radius: 50%; 
-  border: 3px solid white;
-  background-color: white;
-  width: 80px; 
-  height: 80px;
-  margin-left: 15px;
-}
-
-#user_name {
-  margin-top: 33px;
-}
-
-.stats {
-  width: 98px;
-  padding-left: 15px;
-}
-
-.stats_name {
-  color: #444444;
-  font-weight: bold;
-  padding-bottom: 15px;
-}
-
-.stats_number {
-  color: #1da1f2;
-  font-weight: bold;
-}
-
-#post_area{
-  margin: 5px;
-  background-color:white;
-}
-
-#post_area {
-  max-width: 610px;
-}
-
-.post {
-  border-bottom: 2px solid #e6ecf0;
-  min-height: 51px;
-}
-
-.post_img {
-  border-radius: 50%; 
-  width: 70px; 
-  height: 70px;
-  padding: 10px;
-}
-
-.post_name {
-  font-weight: bold;
-  padding-right: 5px;
-
-}
-
-.post_at {
-  color: gray;
-
-}
-
-
-#side_title {
-  font-weight: bold;
-  font-size: 1.3em;
-}
-
-.follow_button {
-  border-color: #1da1f2;
-  color: #1da1f2;
-  background-color: white;
-  border-radius: 35px;
-  padding: 3px 20px;
-  text-align: center;
-
-}

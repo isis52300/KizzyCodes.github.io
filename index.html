@@ -62,7 +62,14 @@
               <h2> Education </h2>
               <p> I studied Computer Science at the 
                 <span class="highlight"> University of California, Riverside </span>
-                and graduated with a Masters of Science in 2023. Click <button> Here </button> 
+                and graduated with a Masters of Science in 2023. 
+                Click <button onclick="show_relative_coursework()"> Here 
+                  <span class="popup" id="relevant_coursework">
+                    Relevant Coursework: Software Construction, Data Structures and Algorithms, Principles of Web
+                    Development, High Performance Computing, Computer Graphics, Artificial Intelligence, Advanced Operating
+                    Systems, Database Management Systems, Real-Time Embedded Systems, Advanced Computer Architecture 
+                  </span> 
+                </button> 
                 to see my Relevant Coursework. 
                 As a recent grad, I 
                 am currently looking for experience to start my career. That is part of the 
@@ -89,5 +96,14 @@
     </div>
 
     </div>
+
+    <!-- Code -->
+    <script>
+      function show_relative_coursework() {
+        var rc = document.getElementById("relevant_coursework");
+        rc.classList.toggle("show");
+      }
+    </script>
+
   </body>
 </html>
