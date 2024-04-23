@@ -94,6 +94,16 @@ button:hover {
   margin-bottom: 10px;
 }
 
+.welcome {
+  color: #405C51;
+  margin-bottom: 30px;
+  text-decoration: underline overline #405C51;
+  font-style: italic;
+  font-family: Bradley Hand cursive;
+  /* background-color: #BCD6BA; 
+  background-blend-mode: lighten; */
+}
+
 #side_content {
   margin: 5px;
   background-color:white;
@@ -109,7 +119,7 @@ button:hover {
   border-radius: 5px;
   padding: 1px;
   z-index: 1;
-  top: 53%;
+  top: 62%;
   left: 69%;
 
   background-color: #BCD6BA;
@@ -117,6 +127,9 @@ button:hover {
   text-align: center;
   font-size: medium;
   max-width: 200px;
+  border-style: groove;
+  border-radius: 5px;
+  border-color: #5C4040;
 }
 
 .show {
@@ -135,3 +148,11 @@ button:hover {
   color: #BAD6CC;
 }
 
+.page_bottom {
+  background-color: #405C51;
+  color: #BAD6CC;
+  padding: 30px;
+  border-style: solid;
+  border-top-color: #5C4040;
+  border-top-width: 5px;
+}
