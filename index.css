@@ -103,12 +103,14 @@ button:hover {
 /*Base of popup*/
 .popup {
   position: absolute;
-  display: inline-block;
+  display: none;
   cursor: pointer;
   visibility: hidden;
   border-radius: 5px;
   padding: 1px;
   z-index: 1;
+  top: 53%;
+  left: 69%;
 
   background-color: #BCD6BA;
   color: #5C4040;
@@ -119,12 +121,15 @@ button:hover {
 
 .show {
   visibility: visible;
+  display: flex;
 }
 
-#relevant_coursework::after {
+/* .popup #relevant_coursework::after {
+  content: "";
+  position: absolute;
   top: 100%;
-  left: 65%;
-}
+  left: 50%;
+} */
 
 .highlight {
   color: #BAD6CC;
