@@ -50,6 +50,20 @@ img {
   display: block
 }
 
+.body_img_left {
+  margin-right: 20px; 
+  margin-top: 15px;
+  width: 225px;
+  height: auto;
+}
+
+.body_img_right {
+  margin-left: 20px;
+  margin-top: 15px;
+  width: 225px;
+  height: auto;
+}
+
 button {
   border-radius: 20px;
   border-width: 4px;
@@ -93,7 +107,7 @@ button:hover {
   border-width: 25px;
   border-radius: 25px;
   background-color: #548B63; /*Color used to editing*/
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .welcome {
