@@ -6,15 +6,15 @@ body {
 
 /*When the screen is smaller (like on phone) hide side*/
 @media screen and (max-width: 1200px) {
-  .side_hide, .side_people { display: none; }  
+  .window_hide { display: none; }  
 }
 
 /*When the screen is larger show side*/
 @media screen and (min-width: 1201px) {
   #side_right, #side_left {
-    margin: 5px;
-    background-color:white;
-    padding: 10px;
+    /* margin: 5px; */
+    /* background-color:white; */
+    /* padding: 10px; */
     width: 250px;
   }
 
@@ -26,11 +26,6 @@ body {
     margin-right: 20px;
   }
 
-  .side_people {
-    border-bottom: 2px solid #e6ecf0;
-    padding-bottom: 15px;
-    min-height: 51px;
-  }
 }
 
 h1 {
@@ -44,8 +39,15 @@ h2 {
 
 p {
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   font-size: x-large;
+}
+
+img {
+  align-self: center;
+  border-radius: 20px;
+  margin: auto; 
+  display: block
 }
 
 button {
@@ -104,10 +106,22 @@ button:hover {
   background-blend-mode: lighten; */
 }
 
-#side_content {
-  margin: 5px;
+.side {
+  overflow-y: hidden;
+  max-height: 600px; /*Change max hight as you add more to page to fit*/
+  padding-right: 17px;
+}
+
+.side:hover {
+  overflow: auto;
+  padding-right: 0px;
+}
+
+.side_content {
   background-color:white;
+  border-radius: 20px;
   padding: 10px;
+  margin-bottom: 10px;
 }
 
 /*Base of popup*/
