@@ -47,40 +47,41 @@
       <div class="d-flex flex-column align-self-start" id="main_body">
         <h1 class="welcome"> Welcome to my Website! </h1>
 
-        <div class="align-self-start d-flex flex-column main_body_section"> 
-          <p> Hello, my name is Isis Dumas, but I also go by Kizzy (hence the website name). </p>
-          <p> I am a Software Engineer looking for experience to get into the tech world.
-            I have skills in <span class="highlight"> C++ </span>, <span class="highlight"> Python </span>, and 
-            <span class="highlight"> HTML/CSS </span>. I even made this website! 
-          </p>
+        <div class="align-self-start d-flex flex-row">
+          <div class="align-self-start d-flex flex-column main_body_section">
+            <p> Hello, my name is Isis Dumas, but I also go by Kizzy (hence the website name). </p>
+            <p> I am a Software Engineer looking for experience to get into the tech world.
+              I have skills in <span class="highlight"> C++ </span>, <span class="highlight"> Python </span>, and 
+              <span class="highlight"> HTML/CSS </span>. I even made this website! 
+            </p>
+          </div>
+
+          <img class="body_img_right" src="img/me.JPG" alt="Me">  
         </div>
 
-        <div class="align-self-start d-flex flex-column"> 
-          <div class="align-self-start d-flex flex-row">
+        <div class="align-self-start d-flex flex-row">
 
-            <img src="./img/ucr.png" atl="ucr" 
-            style="margin-right: 20px; width: 225px; height: 225px;">
+          <img class="body_img_left" src="./img/ucr.png" atl="ucr">
 
-            <div class="align-self-start d-flex flex-column main_body_section">
-              <h2> Education </h2>
-              <p> I studied Computer Science at the 
-                <span class="highlight"> University of California, Riverside </span>
-                and graduated with a Masters of Science in 2023. 
-                Click <button onclick="show_relative_coursework()"> Here 
-                </button> 
-                to see my Relevant Coursework. 
-                As a recent grad, I 
-                am currently looking for experience to start my career. That is part of the 
-                reson I created this website!  
-              </p>
-              <span class="popup d-flex flex-column" id="relevant_coursework">
-                <u>Relevant Coursework:</u> Software Construction, Data Structures and Algorithms, Principles of Web
-                Development, High Performance Computing, Computer Graphics, Artificial Intelligence, Advanced Operating
-                Systems, Database Management Systems, Real-Time Embedded Systems, Advanced Computer Architecture 
-              </span> 
-            </div>
-
+          <div class="align-self-start d-flex flex-column main_body_section">
+            <h2> Education </h2>
+            <p> I studied Computer Science at the 
+              <span class="highlight"> University of California, Riverside </span>
+              and graduated with a Masters of Science in 2023. 
+              Click <button onclick="show_relative_coursework()"> Here 
+              </button> 
+              to see my Relevant Coursework. 
+              As a recent grad, I 
+              am currently looking for experience to start my career. That is part of the 
+              reson I created this website!  
+            </p>
+            <span class="popup d-flex flex-column" id="relevant_coursework">
+              <u>Relevant Coursework:</u> Software Construction, Data Structures and Algorithms, Principles of Web
+              Development, High Performance Computing, Computer Graphics, Artificial Intelligence, Advanced Operating
+              Systems, Database Management Systems, Real-Time Embedded Systems, Advanced Computer Architecture 
+            </span> 
           </div>
+
         </div>
 
       </div>
