@@ -43,6 +43,11 @@ p {
   font-size: x-large;
 }
 
+ol, ul, li {
+  margin-bottom: 5px;
+  font-size: x-large;
+}
+
 img {
   align-self: center;
   border-radius: 20px;
@@ -50,18 +55,26 @@ img {
   display: block
 }
 
+.body_div {
+  margin-bottom: 50px;
+}
+
 .body_img_left {
   margin-right: 20px; 
-  margin-top: 15px;
-  width: 225px;
-  height: auto;
+  box-shadow: -8px 8px 8px #851322;
 }
 
 .body_img_right {
   margin-left: 20px;
-  margin-top: 15px;
-  width: 225px;
+  box-shadow: 8px 8px 8px #851322;
+}
+
+.body_img_left, .body_img_right {
+  width: 350px;
   height: auto;
+  border-radius: 20px;
+  border-style: outset;
+  border-color: #851322;
 }
 
 button {
@@ -116,6 +129,7 @@ button:hover {
   text-decoration: underline overline #405C51;
   font-style: italic;
   font-family: Bradley Hand cursive;
+  text-shadow: 2px 2px 8px #851322, -2px -2px 8px white;
   /* background-color: #BCD6BA; 
   background-blend-mode: lighten; */
 }
@@ -136,6 +150,10 @@ button:hover {
   border-radius: 20px;
   padding: 10px;
   margin-bottom: 10px;
+}
+
+.text_shadow {
+  text-shadow: 2px 2px 8px #851322, -2px -2px 8px white;
 }
 
 /*Base of popup*/
