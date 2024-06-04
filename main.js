@@ -1,10 +1,14 @@
-function load_left_side() {
-    let main_div = document.getElementById("side_left");
+function load_divs() {
+    let side_left = document.getElementById("side_left");
+
     let child = document.createElement('div');
-    child.setAttribute('class', "window_hide side_content");
+
+    child.innerHTML = 
+        `<div class="window_hide">
+            <h2> <u class="text_shadow">Left Side</u> </h2>
+        </div>`
     
-    child.appendChild(document.createTextNode("THIS IS A TEST PLEASE WORK"));
-    main_div.appendChild(child);
+    side_left.appendChild(child);
 }
 
 function show_relative_coursework() {
