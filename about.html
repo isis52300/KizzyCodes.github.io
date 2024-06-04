@@ -3,9 +3,10 @@
   <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="main.js"></script>
     <title>About KizzyCodes</title>
   </head>
-  <body>
+  <body onload="load_divs()">
     
     <!-- Beginning of Nav -->
 
@@ -17,16 +18,6 @@
                 <a class="nav-item nav-link active nav_name" href="./about.html">About</a>
                 <a class="nav-item nav-link nav_name" href="#">Projects</a>
               </div>
-              <div>
-                <a class="nav-item nav-link" style="text-align: center; margin-right: 20em;" href="#">
-                  <!-- <img src="./images/twitter-logo.png" width="20px" height="20px" > -->
-                </a>
-              </div>
-              <div>
-                <a>
-                  <button id="tweet_button"> Tweet </button>
-                </a>
-              </div>
                 
             </div>
         </div>
@@ -34,16 +25,35 @@
   
       <!-- End of Nav -->
 
-    <div class="d-flex flex-row"
-    style=" max-width: 1190px; margin: 56px auto; margin-top: 40px;">
+    <!-- Start of body -->
 
-      <!-- User Box -->
-      <div class="d-flex flex-column align-self-start" id="user_box_area"
-        style="width: 290px;">
-        THIS IS ABOUT 
+    <div class="d-flex flex-row"
+    style="margin: 56px; margin-top: 80px; margin-bottom: 0px;">
+
+      <!-- Left Side -->
+
+      <div class="align-self-start d-flex flex-column window_hide" id="side_left">
+        <!-- this is loaded from js -->
+      </div>
+
+      <!-- Middle / Center Body -->
+
+      <div> THIS IS ABOUT TESTING </div>
+
+      <!-- Right Side -->
+      
+      <div class="align-self-start d-flex flex-column window_hide side" id="side_right">
+        <!-- Added in main.js -->
       </div>
     
+    </div>
 
+    <!-- End of body -->
+
+    <!-- Bottom of the webpage -->
+
+    <div class="page_bottom" id="page_bottom">
+      <!-- Added by main.js -->
     </div>
 
     </div>
