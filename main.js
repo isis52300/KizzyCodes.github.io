@@ -1,18 +1,14 @@
 function load_divs() {
     let side_left = document.getElementById("side_left");
 
-    let child = document.createElement('div');
-    child.innerHTML = 
+    side_left.innerHTML = 
         `<div class="window_hide">
             <h2> <u class="text_shadow">Left Side</u> </h2>
         </div>`
     
-    side_left.appendChild(child);
-
     let side_right = document.getElementById("side_right");
 
-    child = document.createElement('div');
-    child.innerHTML =
+    side_right.innerHTML =
         `<div class="window_hide">
         <h2><u class="text_shadow">Fun Facts:</u></h2> 
       </div>
@@ -52,8 +48,6 @@ function load_divs() {
         <p> Nana </p>
         <img class="img-fluid" src="img/nana.jpg" alt="Nana">
       </div>`
-
-    side_right.appendChild(child);
 
     let page_bottom = document.getElementById("page_bottom");
 
