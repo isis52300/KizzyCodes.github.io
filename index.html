@@ -4,9 +4,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="index.css">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="main.js"></script>
     <title>KizzyCodes</title>
   </head>
-  <body>
+  <body onload="load_left_side()">
 
     <!-- Beginning of Nav -->
 
@@ -37,9 +38,7 @@
       <!-- Left Side -->
 
       <div class="align-self-start d-flex flex-column window_hide" id="side_left">
-        <div class="window_hide side_content">
-          THIS IS DUMMY SIDE 1
-        </div>
+        <!-- this is loaded from js -->
       </div>
 
       <!-- Middle / Center Body -->
@@ -274,14 +273,6 @@
     </div>
 
     </div>
-
-    <!-- Code -->
-    <script>
-      function show_relative_coursework() {
-        var rc = document.getElementById("relevant_coursework");
-        rc.classList.toggle("show");
-      }
-    </script>
 
   </body>
 </html>
