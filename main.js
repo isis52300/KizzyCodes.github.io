@@ -53,7 +53,26 @@ function load_divs() {
         <img class="img-fluid" src="img/nana.jpg" alt="Nana">
       </div>`
 
-      side_right.appendChild(child);
+    side_right.appendChild(child);
+
+    let page_bottom = document.getElementById("page_bottom");
+
+    page_bottom.innerHTML = 
+        `<h1>
+            Find Me!
+        </h1>
+        <p>
+            LinkedIn: https://www.linkedin.com/in/isis-dumas/
+        </p>
+        <p>
+            GitHub: https://github.com/isis52300
+        </p>
+        <p>
+            Email: isis.dumas000@gmail.com
+        </p>`
+
+    
+
 }
 
 function show_relative_coursework() {
